@@ -40,7 +40,7 @@ for more information about this project check out [github repo](https://github.c
 
 ## Texter - A minimal Twitter clone
 
-Working site - https://github.com/nivekithan/path-finder
+Working site - http://texter-one.vercel.app/
 
 Its a twitter clone with lot of less features of twitter, I created this project to improve skills in both frontend and backend.
 
