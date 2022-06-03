@@ -2,6 +2,12 @@
 
 I am Nivekithan S, I am studying at University of Petroleum Engineering and Studies (UPES) at Dehradun. I am highly passionate about coding and improving my skills on it.
 
+### Previous Work Expreience 
+
+Previously I worked as an Intern in ISRA NGO, I was part of team responsible for maintaning express REST api server which talked with firebase database. I also wrote test for any new features I authored or when I change any features. Working there imporved my understanding of CRUD operations and thus allowed me to create better applciations. 
+
+Once I finished my internship I worked on improving my progamming skils myself, I did that by creating personal projects which you can find below. 
+
 ### Resume
 
 You can checkout my resume from the [google drive](https://drive.google.com/file/d/1iW2pn6swLG8FtmXTBvmIM6mW46Jt9EWB/view?usp=sharing)
@@ -28,6 +34,8 @@ I am quick and passionate learner, meaning if I have to work on different techno
 - [Path finder](https://github.com/nivekithan/path-finder)
 - [Texter - A minimal twitter clone](https://github.com/nivekithan/texter)
 - [Slate js devtools](https://github.com/nivekithan/slate-devtools)
+
+I have only worked in backend at my previous internship but since its closed source I can't share it here. 
 
 ## Path finder
 
