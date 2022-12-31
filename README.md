@@ -32,10 +32,7 @@ I am quick and passionate learner, meaning if I have to work on different techno
 
 ### Projects I am proud of
 - [Path finder](https://github.com/nivekithan/path-finder)
-- [Texter - A minimal twitter clone](https://github.com/nivekithan/texter)
 - [Slate js devtools](https://github.com/nivekithan/slate-devtools)
-
-I have only worked in backend at my previous internship but since its closed source I can't share it here. 
 
 ## Path finder
 
@@ -46,14 +43,6 @@ A pathfinding algorithm seeks to find the shortest path between two points. This
 
 for more information about this project check out [github repo](https://github.com/nivekithan/path-finder) 
 
-## Texter - A minimal Twitter clone
-
-Working site - http://texter-one.vercel.app/
-
-Its a twitter clone with lot of less features of twitter, I created this project to improve skills in both frontend and backend.
-
-For more information about this project check out [github repo](https://github.com/nivekithan/texter)
-
 
 ## Slate js devtools
 
@@ -63,12 +52,6 @@ npm package - https://www.npmjs.com/package/slate-devtools
 `slate-js` is a libary for creating rich editor, I created this `devtools` which can be used with it `slate-js` to ease the debugging of application built with `slate-js`
 
 For more information about this project check out [github repo](https://github.com/nivekithan/slate-devtools)
-
-
-
-### Issues
-
-If you find any issue with this document like dead links please open an [issue](https://github.com/nivekithan/nivekithan/issues)
 
 
 
