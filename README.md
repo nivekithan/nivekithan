@@ -2,6 +2,7 @@
 
 I am Nivekithan S, I am fullstack developer currently working in [Magic](https://www.linkedin.com/company/usemagic) in the role Product Engineer (Backend). 
 
+Connect with me at `nivekithan363@gmail.com` or at twitter `https://twitter.com/nivekithanS`
 ### Work Experience 
 
 I am working as Product Engineer at [Magic](https://www.linkedin.com/compay/usemagic). Some of my notable achievements include 
