@@ -4,15 +4,16 @@ I am Nivekithan S, I am fullstack developer currently working in [Magic](https:/
 
 ### Work Experience 
 
-I am working as Product Engineer at [Magic](https://www.linkedin.com/compay/usemagic) since August 2022. Some of my notable achievements include 
+I am working as Product Engineer at [Magic](https://www.linkedin.com/compay/usemagic). Some of my notable achievements include 
 
 1. Designed and implemented a feature that sends more than 10,000 slack DM messages while also respecting the slack ratelimit using bull queue
-2. Successfully transformed monolithic backend into separate job and request services, significantly reducing memory and CPU usage. This ensured seamless operation during high job loads.
-3. Contributed to the development of a payment gateway for the events system, empowering our customers to seamlessly utilize Stripe for event-related transactions.
-4. Worked on setting up Prometheus, Loki, Grafanna for our frontend and backend service while also making minimal changes to our codebase so that we can continuously develop our product.  
-5. Contributed to migrating our service from Digital Ocean to AWS leading to improved performance of our product
-6. Took ownership and created a `cli` tool that initializes our development environment locally after one of our new hires took more than two days to setup the development environment locally.
-7. Took ownership and orchestrated a gradual transition of our product's codebase from Javascript to Javascript with `JsDoc` leading to less runtime errors and better DX without compromising development timelines for ongoing features.
+2. Created a Chatbot using `NextJs`, `supabase (Postgres)`, `openai` and `langchain` in typescript `language` which when deployed increases customer interaction and reduces customer support.
+3. Successfully transformed monolithic backend into separate job and request services, significantly reducing memory and CPU usage. This ensured seamless operation during high job loads.
+4. Contributed to the development of a payment gateway for the events system, empowering our customers to seamlessly utilize Stripe for event-related transactions.
+5. Worked on setting up Prometheus, Loki, Grafanna for our frontend and backend service while also making minimal changes to our codebase so that we can continuously develop our product.  
+6. Contributed to migrating our service from Digital Ocean to AWS leading to improved performance of our product
+7. Took ownership and created a `cli` tool that initializes our development environment locally after one of our new hires took more than two days to setup the development environment locally.
+8. Took ownership and orchestrated a gradual transition of our product's codebase from Javascript to Javascript with `JsDoc` leading to less runtime errors and better DX without compromising development timelines for ongoing features.
 
 ### Projects 
 
