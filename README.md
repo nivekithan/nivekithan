@@ -1,256 +1,212 @@
-### Hi there 👋
+# Hi, I'm Nivekithan 👋
 
-I am Nivekithan S, a Backend Engineer currently working at [EPYC](https://www.linkedin.com/company/epyc/).
+> Backend Engineer at [EPYC](https://www.linkedin.com/company/epyc/) | Building distributed systems, compilers, and everything in between
 
-I write blogs at [nivekithan.com](https://nivekithan.com).
+I'm passionate about **backend engineering**, **distributed systems**, and **systems programming**. When I'm not shipping production code, I'm probably implementing a consensus algorithm or building a programming language for fun.
 
-Connect with me at `nivekithan363@gmail.com` or on Twitter `https://twitter.com/nivekithanS`.
+**📍 Links:** [Blog](https://nivekithan.com) • [Email](mailto:nivekithan363@gmail.com) • [Twitter](https://twitter.com/nivekithanS)
 
-### Core Technologies
+---
 
-**Languages:** TypeScript, Go, Kotlin, JavaScript
+## ⚡ Tech Stack
 
-**Backend & Infrastructure:** Node.js, Cloudflare Workers, Express.js, Hono, AWS (Batch, Lambda, S3)
+```
+Languages            TypeScript · Go · Kotlin · JavaScript
+Backend              Node.js · Cloudflare Workers · Hono · Express.js
+Cloud & Infra        AWS (Batch, Lambda, S3) · Cloudflare · Pulumi
+Databases            PostgreSQL
+Frontend             React · Next.js · Remix · React Router · Vite
+```
 
-**Databases:** PostgreSQL
 
-**Frontend:** React, Next.js, React Router, Remix, Vite
+---
 
+## 💼 Work Experience
 
-### Work Experience
+**Backend Engineer** @ [EPYC](https://www.linkedin.com/company/epyc/) | *Current*
 
-I am currently working as a Backend Engineer at [EPYC](https://www.linkedin.com/company/epyc/).
+Delivering production systems for clients across scheduling, fintech, and funding platforms. Here's what I've built:
 
-Here are the key projects I have delivered for various clients:
+### 📅 Scheduling System
 
-#### 1. Scheduling System
+Built a robust appointment booking platform connecting users with industry experts.
 
-Implemented a scheduling system that allows users to book appointments with industry experts.
+**Highlights:**
+- 🔒 **Zero double bookings** through proper concurrency control
+- 💳 Integrated Razorpay with duplicate payment prevention
+- 📆 Google Calendar sync to avoid conflicts
+- ⏰ Custom mentor availability management
 
-**Key Features:**
-- Prevented double booking through proper concurrency handling
-- Integrated with Razorpay to prevent duplicate payments and bookings for unavailable slots
-- Enabled mentors to set custom availability schedules
-- Synchronized with Google Calendar to prevent scheduling conflicts
+`TypeScript` `React Router v7` `Cloudflare Workers` `PostgreSQL`
 
-**Tech Stack:** TypeScript, React (React Router v7), Cloudflare Workers, PostgreSQL
+### 💳 Shopify Credits System for Airlines
 
-#### 2. Shopify Credits System for Airlines
+Enterprise credits management system for airline employee uniform purchases.
 
-Built a credits management system for airline companies to provide uniform purchase credits to their employees through a Shopify store.
+**Highlights:**
+- 💰 **Balances never go negative** - handled every concurrency edge case
+- 🔄 Accurate accounting across refunds, cancellations, and returns
+- 🧾 Custom tax software integration for precise sales tax
+- 📊 Analytics dashboards for vendors and airline management
 
-**Key Features:**
-- Handled all concurrency edge cases to ensure balances never go below zero
-- Ensured accurate balance updates across refunds, cancellations, and returns
-- Integrated with custom tax processing software for accurate sales tax deduction
-- Provided comprehensive analytics dashboards for both vendors and airline companies
+`TypeScript` `Next.js` `Cloudflare Workers` `PostgreSQL`
 
-**Tech Stack:** TypeScript, React (Next.js), Cloudflare Workers, PostgreSQL
+### 🚀 Funding Application Platform
 
-#### 3. Funding Application Platform
+Collaboration platform connecting founders with investors.
 
-Developed a collaboration platform where founders can apply for funding, with an internal dashboard for investors to review applications.
+**Highlights:**
+- 🔄 Application reconciliation across Algolia + multiple internal APIs
+- 🛡️ **Fault-tolerant architecture** - graceful degradation when APIs fail
+- 🔍 Duplicate detection and missing application recovery
 
-**Key Features:**
-- Reconciled applications across Algolia and multiple internal APIs
-- Implemented duplicate detection and missing application handling
-- Built a fault-tolerant system that maintains functionality with minimal degradation even when internal APIs are down
+`TypeScript` `React Router v7` `Cloudflare Workers` `PostgreSQL`
 
-**Tech Stack:** TypeScript, React (React Router v7), Cloudflare Workers, PostgreSQL
+### 🎯 Other Wins
 
-#### Additional Achievements
+- 📨 Built bulk Slack DM system sending **10,000+ messages** with rate limit handling (Bull queue)
+- 🏗️ Decomposed monolith → microservices, **slashing memory/CPU usage** during high job loads
+- 💰 Developed Stripe payment gateway for events platform
+- ☁️ Migrated services Digital Ocean → AWS, improving performance
+- ⚡ Created dev environment CLI: **setup time from 2+ days → minutes**
+- 📝 Led JS → JSDoc migration: fewer runtime errors, zero delivery slowdown
 
-In other projects, I have:
+---
 
-1. Designed and implemented a feature that sends 10,000+ Slack DM messages while respecting rate limits using Bull queue
-2. Successfully transformed a monolithic backend into separate job and request services, significantly reducing memory and CPU usage while ensuring seamless operation during high job loads
-3. Contributed to developing a payment gateway for an events system, enabling customers to seamlessly process transactions via Stripe
-4. Contributed to migrating services from Digital Ocean to AWS, resulting in improved product performance
-5. Created a CLI tool that initializes the development environment locally, reducing setup time from 2+ days to minutes for new hires
-6. Orchestrated a gradual transition from JavaScript to JavaScript with JSDoc, reducing runtime errors and improving developer experience without compromising feature delivery timelines
+## 🔨 Featured Projects
 
-### Featured Projects
+*I build things to understand how they work - from consensus algorithms to compilers.*
 
-Whenever I get free time, I like to work on projects to satisfy my curiosity about new technologies and understand their tradeoffs compared to current technologies.
+### 🔍 [Levenshtein Automata](https://github.com/nivekithan/levenshtein-automata)
 
-## Levenshtein Automata
+Fast fuzzy string search using finite automata - **10,727 queries/sec** on 370K-word dictionary.
 
-A Kotlin implementation of Levenshtein Automata for fast fuzzy string searching in large dictionaries. This project implements various optimizations described in the Schulz & Mihov paper, achieving 10,727 queries/second on a 370,000-word dictionary.
+```
+Performance: 38% faster than runtime construction at distance 3
+Approach:    Precomputed DFA + Trie-based dictionary
+Language:    Kotlin
+```
 
-**Key Features:**
-- Multiple implementation versions (v1-v7) showcasing progressive optimizations
-- Precomputed DFA construction for maximum performance
-- Trie-based dictionary for efficient prefix sharing
-- Support for edit distances up to 9
-- Comprehensive benchmarking suite
-- 38% performance improvement over runtime construction at distance 3
+7 implementation versions (v1-v7) showing progressive optimizations from the Schulz & Mihov paper.
 
-- Github Repo: https://github.com/nivekithan/levenshtein-automata
+### 🗳️ [Go Raft](https://github.com/nivekithan/go-raft)
 
-## Go Raft
+Raft consensus algorithm implementation with **formal verification** before a single line of code.
 
-Implementation of the Raft consensus algorithm in Go with minimal mutex usage. To ensure correctness and safety, the implementation was formally verified using P-lang for model checking before coding.
+```
+Verification: P-lang model checking
+Approach:     Minimal mutex usage for performance
+Language:     Go
+```
 
-**Key Features:**
-- Raft consensus algorithm implementation in Go
-- Minimal mutex usage for better performance
-- Formally verified using P-lang model checking
-- Based on the original Raft paper by Ongaro and Ousterhout
+**Links:** [P-lang Models](https://github.com/nivekithan/p-models) • [Original Paper](https://raft.github.io/raft.pdf)
 
-- Github Repo: https://github.com/nivekithan/go-raft
-- P-lang Models: https://github.com/nivekithan/p-models
-- Original Paper: https://raft.github.io/raft.pdf
+### 🌐 [Protohackers Solutions](https://github.com/nivekithan/go-network)
 
-## Protohackers Solutions (go-network)
+Network programming challenges: TCP/UDP servers, custom protocols, and everything low-level.
 
-Solutions for [Protohackers](https://protohackers.com/) network programming challenges implemented in Go. A series of increasingly complex TCP/UDP server implementations covering various networking concepts and custom protocol implementations.
+**7 Challenges Solved:**
+- 🔄 Custom LRCP protocol (UDP + acks + retransmission)
+- 🚗 Binary TCP protocol for speed cameras
+- 🔀 TCP proxy with address rewriting
+- 💬 Multi-user chat server
+- 📊 Asset tracking with binary protocol + SQLite
+- And more...
 
-**Problems Solved:**
-- Line Reversal: Custom LRCP protocol implementation over UDP with acknowledgments and retransmission
-- Speed Daemon: Speed camera and ticketing system with binary TCP protocol
-- Mob in the Middle: TCP proxy with address rewriting
-- Unusual Database Program: UDP key-value store
-- Budget Chat: Multi-user chat room server
-- Means to an End: Asset price tracking with binary protocol and SQLite
-- Prime Time: JSON primality testing server
+`Go` `TCP/UDP` `Custom Protocols`
 
-- Github Repo: https://github.com/nivekithan/go-network
+### 🎯 [Tango Programming Language](https://github.com/nivekithan/tango)
 
-## Tango Programming Language
+Custom language with full compiler pipeline: **Lexer → Parser → AST → Compiler → VM**.
 
-A custom programming language with its own compiler and virtual machine, implemented in Go. Tango supports variable declarations, arithmetic and boolean operations, and includes a full compilation pipeline from lexer to bytecode execution.
+```
+Features: Variables, arithmetic, boolean ops, REPL
+Output:   Bytecode execution
+Language: Go
+```
 
-**Key Features:**
-- Complete compiler implementation (lexer, parser, AST, compiler, VM)
-- Bytecode compilation and execution
-- Interactive REPL for development
-- Support for variables, arithmetic, and boolean operations
-- Built entirely in Go
+### 🎬 [Blender Render Farm](https://github.com/nivekithan/blender-render-farm)
 
-- Github Repo: https://github.com/nivekithan/tango
+Serverless distributed rendering: distribute animation frames across AWS Fargate containers.
 
-## Blender Render Farm
+```
+Architecture: AWS Batch + Lambda + S3
+Orchestration: S3 upload events → Lambda triggers
+IaC:          Pulumi
+```
 
-A serverless distributed rendering system for Blender animations using AWS Batch, S3, and Lambda. This project enables parallel frame rendering of Blender projects in the cloud, perfect for rendering complex animations faster by distributing frames across multiple Fargate containers.
+Parallel rendering with automatic frame consolidation. `Go` `Docker` `AWS`
 
-**Key Features:**
-- Parallel frame rendering using AWS Batch with Fargate
-- Automatic frame consolidation into ZIP archives
-- Lambda-triggered orchestration via S3 upload events
-- Infrastructure as code using Pulumi
-- Built with Go, Docker, AWS Batch, and S3
+### ⚙️ [TypeScript Compiler](https://github.com/nivekithan/compiler)
 
-- Github Repo: https://github.com/nivekithan/blender-render-farm
+TypeScript → Native code using LLVM. Educational compiler with full test coverage.
 
-## TypeScript Compiler
+```
+Supports: Variables, control flow, functions, operators
+Backend:  LLVM
+Output:   Native code
+```
 
-An educational compiler that converts a subset of TypeScript to native code using LLVM backend. This project demonstrates compiler design principles with comprehensive test coverage for all supported language features.
+---
 
-**Supported Features:**
-- Variable declarations (const, let) with type annotations
-- Unary and binary expressions
-- Control flow (if/else if/else, while, do-while)
-- Function declarations with typed parameters
-- Comparison and logical operators
-- Built with LLVM for native code generation
+## 🚀 Live Projects
 
-- Github Repo: https://github.com/nivekithan/compiler
+### 📧 [Maailit](https://maailit.com) • [GitHub](https://github.com/nivekithan/maailit)
 
-### Other Projects
+Temporary email for developers - test OTPs, password resets, without inbox clutter.
 
-## Maailit
+**Features:** Real-time WebSocket updates • AI-powered code extraction (GPT-4o-mini) • 15-min auto-cleanup • Zero registration
 
-A temporary email service designed for developers who need to test email functionality, OTP verification, and password resets without cluttering their personal inboxes. Get instant access to temporary emails with real-time updates and AI-powered CTA detection.
+`Next.js 14` `Cloudflare Workers` `Durable Objects` `D1`
 
-**Key Features:**
-- Instant email access at `yourslug@maailit.com`
-- Real-time updates via WebSocket
-- AI-powered extraction of verification codes and links using GPT-4o-mini
-- Auto-cleanup after 15 minutes
-- No registration required
-- Built with Next.js 14, Cloudflare Workers, Durable Objects, and D1
+### 📹 [Fireside Events](https://calls.nivekithan.com/) • [GitHub](https://github.com/nivekithan/fireside-events)
 
-- Live Version: https://maailit.com
-- Github Repo: https://github.com/nivekithan/maailit
+Real-time video broadcasting with **XState state machines** for complex UI flows.
 
-## Fireside Events
+**Features:** Multi-participant calls • Screen sharing • WebSocket signaling (Durable Objects) • [State machine visualization](https://stately.ai/registry/editor/1f4bf00b-3305-47d0-8a41-6883662fc62b?machineId=f618d82b-9ff8-4384-a22d-80a650c9d620)
 
-A real-time video broadcasting application built with WebRTC, Cloudflare Workers, and XState state machines. Experience multi-participant video calls with seamless screen sharing capabilities, powered by sophisticated state management.
+`React Router v7` `WebRTC` `XState v5` `Cloudflare Calls API`
 
-**Key Features:**
-- Real-time video broadcasting with multiple participants
-- Screen sharing functionality
-- XState v5 state machines for complex UI flows
-- WebSocket-based signaling using Cloudflare Durable Objects
-- Adaptive video states with pause/resume
-- Built with React Router v7, Cloudflare Calls API, and Drizzle ORM
+### 💬 [Chat with JSON](https://chat-with-json.nivekithan.com) • [GitHub](https://github.com/nivekithan/chat-with-json)
 
-- Live Version: https://calls.nivekithan.com/
-- State Machine Visualization: https://stately.ai/registry/editor/1f4bf00b-3305-47d0-8a41-6883662fc62b?machineId=f618d82b-9ff8-4384-a22d-80a650c9d620
-- Github Repo: https://github.com/nivekithan/fireside-events
+Query JSON files with natural language. **Your data never leaves your browser.**
 
-## Chat with JSON
+**Features:** GPT-4 powered • Auto schema generation • Streaming responses • Client-side processing
 
-A web application that lets you chat with your JSON files using natural language, powered by OpenAI's GPT-4. Upload a JSON file, ask questions about your data, and get AI-powered analysis with automatically generated and executed JavaScript code.
+`Remix` `Vercel AI SDK` `Cloudflare Pages`
 
-**Key Features:**
-- Natural language queries for JSON data analysis
-- Automatic JSON schema generation for better context
-- Client-side processing - your data never leaves your browser
-- Real-time chat interface with streaming responses
-- Built with Remix, Vercel AI SDK, and deployed on Cloudflare Pages
+### 🔧 [pg-cluster](https://github.com/nivekithan/pg-cluster) *[WIP]*
 
-- Live Version: https://chat-with-json.nivekithan.com
-- Github Repo: https://github.com/nivekithan/chat-with-json
+Kubernetes operator for PostgreSQL clusters - backups, PITR, on-demand DB provisioning for PR previews.
 
-## pg-cluster
+`TypeScript` `Effect-TS` `Kubernetes` `PostgreSQL 17` `pgBackRest`
 
-A Kubernetes operator for managing PostgreSQL database clusters with built-in backup, Point-in-Time Recovery (PITR), and easy database provisioning - designed for dynamic environments like PR preview deployments.
+---
 
-**Status:** Work in Progress
+## 🎓 Learning Challenges
 
-**Key Features (Planned):**
-- PostgreSQL cluster management on Kubernetes
-- Automated backups with pgBackRest integration
-- Point-in-Time Recovery (PITR)
-- On-demand database provisioning for PR previews
-- Built with TypeScript, Effect-TS, Zod, and PostgreSQL 17
+### [Fly.io Distributed Systems](https://fly.io/dist-sys/) • [My Solutions](https://github.com/nivekithan/deno-fly)
 
-- Github Repo: https://github.com/nivekithan/pg-cluster
+Completed 6 challenges: Echo • Unique ID Generation • Single/Multi-Node Broadcast • Fault-Tolerant Broadcast • Efficient Broadcast
 
-### Challenges & Learning
+*When I want to learn a concept deeply, I prefer challenges with clear constraints over building full projects.*
 
-## Fly.io Distributed System Challenges
+---
 
-Doing a full-stack project is a huge time commitment. That's why I prefer to do challenges when I want to learn a particular concept with clearly defined requirements and constraints.
+## 🌱 Early Projects
 
-One of those challenges is [Fly.io Distributed System Challenges](https://fly.io/dist-sys/).
+**[Path Finder](https://path-finder-brown.vercel.app/)** • [GitHub](https://github.com/nivekithan/path-finder)  
+Pathfinding algorithm visualizer - one of my first projects.
 
-I have completed these challenges:
+**[slate-devtools](https://www.npmjs.com/package/slate-devtools)** • [GitHub](https://github.com/nivekithan/slate-devtools)  
+Debugging tools for Slate.js rich text editor. Built while cloning Notion as a beginner.
 
-1. Echo - https://fly.io/dist-sys/1/
-2. Unique ID Generation - https://fly.io/dist-sys/2/
-3. Single Node Broadcast - https://fly.io/dist-sys/3a/
-4. Multi Node Broadcast - https://fly.io/dist-sys/3b/
-5. Fault-Tolerant Broadcast - https://fly.io/dist-sys/3c/
-6. Efficient Broadcast - https://fly.io/dist-sys/3d/
+---
 
-You can check my solutions at [Solutions for fly.io challenges using Deno](https://github.com/nivekithan/deno-fly)
+<div align="center">
 
-### Early Projects
+*Building systems, one abstraction at a time.*
 
-## Path Finder
+**[nivekithan.com](https://nivekithan.com)** • **[nivekithan363@gmail.com](mailto:nivekithan363@gmail.com)** • **[@nivekithanS](https://twitter.com/nivekithanS)**
 
-One of the first projects I did as a beginner. I was learning about path-finding algorithms and thought it would be fun to implement a visualizer for the algorithm.
-
-- Live Site: https://path-finder-brown.vercel.app/
-- Github Repo: https://github.com/nivekithan/path-finder
-
-## Slatejs Devtools
-
-`slate-js` is a library for creating rich text editors. When I was a beginner, I was working on creating a clone of Notion, which led me to `slate-js`. The Notion text editor is hugely complex, and whenever I ran into bugs while implementing those features using `slate-js`, it used to take me a long time to pin down the bug.
-
-That's when I decided to build `slate-js-devtools` to make my debugging experience better.
-
-- npm package: https://www.npmjs.com/package/slate-devtools
-- Github Repo: https://github.com/nivekithan/slate-devtools
+</div>
