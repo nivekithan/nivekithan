@@ -4,7 +4,7 @@
 
 I'm passionate about **backend engineering**, **distributed systems**, and **systems programming**. When I'm not shipping production code, I'm probably implementing a consensus algorithm or building a programming language for fun.
 
-**📍 Links:** [Blog](https://nivekithan.com) • [Email](mailto:nivekithan363@gmail.com) • [Twitter](https://twitter.com/nivekithanS) • [Resume](https://github.com/nivekithan/nivekithan/raw/main/resume/resume.pdf)
+**📍 Links:** [Blog](https://nivekithan.com) • [Email](mailto:nivekithan363@gmail.com) • [Twitter](https://twitter.com/nivekithanS) • [Resume](https://github.com/nivekithan/nivekithan/raw/main/resume/Nivekithan%20Resume%20-%20Backend%20Engineer.pdf)
 
 ---
 
