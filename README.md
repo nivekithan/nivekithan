@@ -1,26 +1,77 @@
 ### Hi there 👋
 
-I am Nivekithan S, I am fullstack developer currently working in [Magic](https://www.linkedin.com/company/usemagic) in the role Product Engineer (Backend).
+I am Nivekithan S, a Backend Engineer currently working at [EPYC](https://www.linkedin.com/company/epyc/).
 
-Connect with me at `nivekithan363@gmail.com` or at twitter `https://twitter.com/nivekithanS`
+I write blogs at [nivekithan.com](https://nivekithan.com).
+
+Connect with me at `nivekithan363@gmail.com` or on Twitter `https://twitter.com/nivekithanS`.
+
+### Core Technologies
+
+**Languages:** TypeScript, Go, Kotlin, JavaScript
+
+**Backend & Infrastructure:** Node.js, Cloudflare Workers, Express.js, Hono, AWS (Batch, Lambda, S3)
+
+**Databases:** PostgreSQL
+
+**Frontend:** React, Next.js, React Router, Remix, Vite
+
 
 ### Work Experience
 
-I am working as Product Engineer at [Magic](https://www.linkedin.com/compay/usemagic). Some of my notable achievements include
+I am currently working as a Backend Engineer at [EPYC](https://www.linkedin.com/company/epyc/).
 
-1. Designed and implemented a feature that sends more than 10,000 slack DM messages while also respecting the slack ratelimit using bull queue
-2. Created a Chatbot using `NextJs`, `supabase (Postgres)`, `openai` and `langchain` in typescript `language` which when deployed increases customer interaction and reduces customer support.
-3. Successfully transformed monolithic backend into separate job and request services, significantly reducing memory and CPU usage. This ensured seamless operation during high job loads.
-4. Contributed to the development of a payment gateway for the events system, empowering our customers to seamlessly utilize Stripe for event-related transactions.
-5. Worked on setting up Prometheus, Loki, Grafanna for our frontend and backend service while also making minimal changes to our codebase so that we can continuously develop our product.
-6. Contributed to migrating our service from Digital Ocean to AWS leading to improved performance of our product
-7. Took ownership and created a `cli` tool that initializes our development environment locally after one of our new hires took more than two days to setup the development environment locally.
-8. Took ownership and orchestrated a gradual transition of our product's codebase from Javascript to Javascript with `JsDoc` leading to less runtime errors and better DX without compromising development timelines for ongoing features.
+Here are the key projects I have delivered for various clients:
 
-### Projects
+#### 1. Scheduling System
 
-Whenever I get free time, I like to work on projects to satisfy my curiosity about new technologies and understand their tradeoff compared to current technologies.
+Implemented a scheduling system that allows users to book appointments with industry experts.
 
+**Key Features:**
+- Prevented double booking through proper concurrency handling
+- Integrated with Razorpay to prevent duplicate payments and bookings for unavailable slots
+- Enabled mentors to set custom availability schedules
+- Synchronized with Google Calendar to prevent scheduling conflicts
+
+**Tech Stack:** TypeScript, React (React Router v7), Cloudflare Workers, PostgreSQL
+
+#### 2. Shopify Credits System for Airlines
+
+Built a credits management system for airline companies to provide uniform purchase credits to their employees through a Shopify store.
+
+**Key Features:**
+- Handled all concurrency edge cases to ensure balances never go below zero
+- Ensured accurate balance updates across refunds, cancellations, and returns
+- Integrated with custom tax processing software for accurate sales tax deduction
+- Provided comprehensive analytics dashboards for both vendors and airline companies
+
+**Tech Stack:** TypeScript, React (Next.js), Cloudflare Workers, PostgreSQL
+
+#### 3. Funding Application Platform
+
+Developed a collaboration platform where founders can apply for funding, with an internal dashboard for investors to review applications.
+
+**Key Features:**
+- Reconciled applications across Algolia and multiple internal APIs
+- Implemented duplicate detection and missing application handling
+- Built a fault-tolerant system that maintains functionality with minimal degradation even when internal APIs are down
+
+**Tech Stack:** TypeScript, React (React Router v7), Cloudflare Workers, PostgreSQL
+
+#### Additional Achievements
+
+In other projects, I have:
+
+1. Designed and implemented a feature that sends 10,000+ Slack DM messages while respecting rate limits using Bull queue
+2. Successfully transformed a monolithic backend into separate job and request services, significantly reducing memory and CPU usage while ensuring seamless operation during high job loads
+3. Contributed to developing a payment gateway for an events system, enabling customers to seamlessly process transactions via Stripe
+4. Contributed to migrating services from Digital Ocean to AWS, resulting in improved product performance
+5. Created a CLI tool that initializes the development environment locally, reducing setup time from 2+ days to minutes for new hires
+6. Orchestrated a gradual transition from JavaScript to JavaScript with JSDoc, reducing runtime errors and improving developer experience without compromising feature delivery timelines
+
+### Featured Projects
+
+Whenever I get free time, I like to work on projects to satisfy my curiosity about new technologies and understand their tradeoffs compared to current technologies.
 
 ## Levenshtein Automata
 
@@ -35,19 +86,20 @@ A Kotlin implementation of Levenshtein Automata for fast fuzzy string searching 
 - 38% performance improvement over runtime construction at distance 3
 
 - Github Repo: https://github.com/nivekithan/levenshtein-automata
-## Chat with JSON
 
-A web application that lets you chat with your JSON files using natural language, powered by OpenAI's GPT-4. Upload a JSON file, ask questions about your data, and get AI-powered analysis with automatically generated and executed JavaScript code.
+## Go Raft
+
+Implementation of the Raft consensus algorithm in Go with minimal mutex usage. To ensure correctness and safety, the implementation was formally verified using P-lang for model checking before coding.
 
 **Key Features:**
-- Natural language queries for JSON data analysis
-- Automatic JSON schema generation for better context
-- Client-side processing - your data never leaves your browser
-- Real-time chat interface with streaming responses
-- Built with Remix, Vercel AI SDK, and deployed on Cloudflare Pages
+- Raft consensus algorithm implementation in Go
+- Minimal mutex usage for better performance
+- Formally verified using P-lang model checking
+- Based on the original Raft paper by Ongaro and Ousterhout
 
-- Live Version: https://chat-with-json.nivekithan.com
-- Github Repo: https://github.com/nivekithan/chat-with-json
+- Github Repo: https://github.com/nivekithan/go-raft
+- P-lang Models: https://github.com/nivekithan/p-models
+- Original Paper: https://raft.github.io/raft.pdf
 
 ## Protohackers Solutions (go-network)
 
@@ -64,6 +116,19 @@ Solutions for [Protohackers](https://protohackers.com/) network programming chal
 
 - Github Repo: https://github.com/nivekithan/go-network
 
+## Tango Programming Language
+
+A custom programming language with its own compiler and virtual machine, implemented in Go. Tango supports variable declarations, arithmetic and boolean operations, and includes a full compilation pipeline from lexer to bytecode execution.
+
+**Key Features:**
+- Complete compiler implementation (lexer, parser, AST, compiler, VM)
+- Bytecode compilation and execution
+- Interactive REPL for development
+- Support for variables, arithmetic, and boolean operations
+- Built entirely in Go
+
+- Github Repo: https://github.com/nivekithan/tango
+
 ## Blender Render Farm
 
 A serverless distributed rendering system for Blender animations using AWS Batch, S3, and Lambda. This project enables parallel frame rendering of Blender projects in the cloud, perfect for rendering complex animations faster by distributing frames across multiple Fargate containers.
@@ -77,20 +142,21 @@ A serverless distributed rendering system for Blender animations using AWS Batch
 
 - Github Repo: https://github.com/nivekithan/blender-render-farm
 
+## TypeScript Compiler
 
-## Go Raft
+An educational compiler that converts a subset of TypeScript to native code using LLVM backend. This project demonstrates compiler design principles with comprehensive test coverage for all supported language features.
 
-Implementation of the Raft consensus algorithm in Go with minimal mutex usage. To ensure correctness and safety, the implementation was formally verified using P-lang for model checking before coding.
+**Supported Features:**
+- Variable declarations (const, let) with type annotations
+- Unary and binary expressions
+- Control flow (if/else if/else, while, do-while)
+- Function declarations with typed parameters
+- Comparison and logical operators
+- Built with LLVM for native code generation
 
-**Key Features:**
-- Raft consensus algorithm implementation in Go
-- Minimal mutex usage for better performance
-- Formally verified using P-lang model checking
-- Based on the original Raft paper by Ongaro and Ousterhout
+- Github Repo: https://github.com/nivekithan/compiler
 
-- Github Repo: https://github.com/nivekithan/go-raft
-- P-lang Models: https://github.com/nivekithan/p-models
-- Original Paper: https://raft.github.io/raft.pdf
+### Other Projects
 
 ## Maailit
 
@@ -123,68 +189,19 @@ A real-time video broadcasting application built with WebRTC, Cloudflare Workers
 - State Machine Visualization: https://stately.ai/registry/editor/1f4bf00b-3305-47d0-8a41-6883662fc62b?machineId=f618d82b-9ff8-4384-a22d-80a650c9d620
 - Github Repo: https://github.com/nivekithan/fireside-events
 
+## Chat with JSON
 
-## Cartoon Generator
-
-An AI-powered political cartoon generator that creates simple black and white cartoons based on user-provided topics. Uses GPT-4 for prompt enhancement and Flux 1.1 Pro for high-quality image generation.
-
-**Key Features:**
-- Generate political cartoons from text prompts
-- AI-powered prompt enhancement using GPT-4o
-- High-quality image generation using Replicate's Flux 1.1 Pro
-- Gallery view of generated cartoons
-- Built with React, Vite, Hono, Cloudflare Workers, D1, and R2
-
-- Live Version: https://cartoon-gen.nivekithan.com/
-- Github Repo: https://github.com/nivekithan/cartoon_gen
-
-## Screenshot Page
-
-A free tool to take screenshots of any website using Cloudflare's Browser Rendering API. Supports multiple device types (mobile, tablet, desktop) and full-page screenshots with fast and reliable rendering.
+A web application that lets you chat with your JSON files using natural language, powered by OpenAI's GPT-4. Upload a JSON file, ask questions about your data, and get AI-powered analysis with automatically generated and executed JavaScript code.
 
 **Key Features:**
-- Screenshot any publicly accessible website
-- Multiple device type support
-- Full page screenshot option
-- Built with Remix, Cloudflare Pages, Workers, and R2
-- Fast rendering using Cloudflare Browser API
+- Natural language queries for JSON data analysis
+- Automatic JSON schema generation for better context
+- Client-side processing - your data never leaves your browser
+- Real-time chat interface with streaming responses
+- Built with Remix, Vercel AI SDK, and deployed on Cloudflare Pages
 
-- Live Version: https://screenshot.nivekithan.com/
-- Github Repo: https://github.com/nivekithan/screenshot-page
-
-## Path Finder
-
-It is one of the first projects I did as a beginner, I was learning about path-finding algorithms and I thought how fun it will be if I implemented a visualizer for the algorithm.
-
-- Live Site: https://path-finder-brown.vercel.app/
-- Github Repo: https://github.com/nivekithan/path-finder
-
-## Slatejs Devtools
-
-`slate-js` is a library for creating a rich text editor. When I was a beginner I was working on creating a clone of notion, which lead me to `slate-js`. Notion text editor is hugely complex. Whenever I run into bugs while implementing those features using `slate-js` it used to take me a long time to pin down the bug.
-
-That's when I decided to build `slate-js-devtools` to make my debugging experience better.
-
-- npm package: https://www.npmjs.com/package/slate-devtools
-- Github Repo: https://github.com/nivekithan/slate-devtools
-
-### Fly.io Distributed System Challenges
-
-Doing a full-stack project is a huge time commitment. That's I prefer to do challenges when I want to learn a particular concept with clearly defined requirements and constraints.
-
-One of those challenges is [Fly.io Distributed system challenges](https://fly.io/dist-sys/)
-
-Till now I have completed these challenges
-
-1. Echo - https://fly.io/dist-sys/1/
-2. Unqiue Id generateion - https://fly.io/dist-sys/2/
-3. Single Node Broadcast - https://fly.io/dist-sys/3a/
-4. Multi Node Broadcast - https://fly.io/dist-sys/3b/
-5. Fault-Tolerant Broadcast - https://fly.io/dist-sys/3c/
-6. Efficiency Broadcast - https://fly.io/dist-sys/3d/
-
-You can check my solutions at [Solution for fly.io challenge using deno](https://github.com/nivekithan/deno-fly)
-
+- Live Version: https://chat-with-json.nivekithan.com
+- Github Repo: https://github.com/nivekithan/chat-with-json
 
 ## pg-cluster
 
@@ -201,16 +218,39 @@ A Kubernetes operator for managing PostgreSQL database clusters with built-in ba
 
 - Github Repo: https://github.com/nivekithan/pg-cluster
 
-## Low Code Builder
+### Challenges & Learning
 
-A visual, node-based low-code builder for creating API endpoints through an intuitive drag-and-drop interface. Build API workflows visually and compile them into deployable Cloudflare Workers with production-ready code.
+## Fly.io Distributed System Challenges
 
-**Key Features:**
-- Visual API design using a node-based editor
-- API Request, Response, and If/Else condition nodes
-- Automatic graph layout with Dagre and ELK
-- Real-time autosave
-- Code generation that compiles visual workflows into JavaScript
-- Built with Electron, React Flow, tRPC, and TypeScript
+Doing a full-stack project is a huge time commitment. That's why I prefer to do challenges when I want to learn a particular concept with clearly defined requirements and constraints.
 
-- Github Repo: https://github.com/nivekithan/low-code-builder
+One of those challenges is [Fly.io Distributed System Challenges](https://fly.io/dist-sys/).
+
+I have completed these challenges:
+
+1. Echo - https://fly.io/dist-sys/1/
+2. Unique ID Generation - https://fly.io/dist-sys/2/
+3. Single Node Broadcast - https://fly.io/dist-sys/3a/
+4. Multi Node Broadcast - https://fly.io/dist-sys/3b/
+5. Fault-Tolerant Broadcast - https://fly.io/dist-sys/3c/
+6. Efficient Broadcast - https://fly.io/dist-sys/3d/
+
+You can check my solutions at [Solutions for fly.io challenges using Deno](https://github.com/nivekithan/deno-fly)
+
+### Early Projects
+
+## Path Finder
+
+One of the first projects I did as a beginner. I was learning about path-finding algorithms and thought it would be fun to implement a visualizer for the algorithm.
+
+- Live Site: https://path-finder-brown.vercel.app/
+- Github Repo: https://github.com/nivekithan/path-finder
+
+## Slatejs Devtools
+
+`slate-js` is a library for creating rich text editors. When I was a beginner, I was working on creating a clone of Notion, which led me to `slate-js`. The Notion text editor is hugely complex, and whenever I ran into bugs while implementing those features using `slate-js`, it used to take me a long time to pin down the bug.
+
+That's when I decided to build `slate-js-devtools` to make my debugging experience better.
+
+- npm package: https://www.npmjs.com/package/slate-devtools
+- Github Repo: https://github.com/nivekithan/slate-devtools
