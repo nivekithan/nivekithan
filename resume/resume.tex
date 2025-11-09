@@ -1,0 +1,250 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nivekithan} \\ \vspace{1pt}
+    \small \faEnvelope\ \href{mailto:nivekithan363@gmail.com}{nivekithan363@gmail.com} $|$ 
+    \faGlobe\ \href{https://nivekithan.com}{nivekithan.com} $|$ 
+    \faTwitter\ \href{https://twitter.com/nivekithanS}{@nivekithanS} $|$
+    \faGithub\ \href{https://github.com/nivekithan}{github.com/nivekithan}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Backend Engineer passionate about distributed systems, systems programming, and building robust production systems. Experience delivering enterprise-grade scheduling, fintech, and funding platforms with focus on concurrency control, fault tolerance, and performance optimization.
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Backend Engineer}{Aug 2022 -- Present}
+      {EPYC}{Delhi, India}
+      \resumeItemListStart
+        \resumeItem{Delivered production systems for clients across scheduling, fintech, and funding platforms}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Scheduling System} $|$ \emph{TypeScript, React Router v7, Cloudflare Workers, PostgreSQL}}{}
+      \resumeItemListStart
+        \resumeItem{Achieved zero double bookings through proper concurrency control mechanisms}
+        \resumeItem{Integrated Razorpay payment gateway with duplicate payment prevention logic}
+        \resumeItem{Implemented Google Calendar sync to prevent scheduling conflicts}
+        \resumeItem{Built custom mentor availability management system}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Shopify Credits System for Airlines} $|$ \emph{TypeScript, Next.js, Cloudflare Workers, PostgreSQL}}{}
+      \resumeItemListStart
+        \resumeItem{Designed system ensuring balances never go negative by handling all concurrency edge cases}
+        \resumeItem{Implemented accurate accounting across refunds, cancellations, and returns}
+        \resumeItem{Integrated custom tax software for precise sales tax calculations}
+        \resumeItem{Built analytics dashboards for vendors and airline management}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Funding Application Platform} $|$ \emph{TypeScript, React Router v7, Cloudflare Workers, PostgreSQL}}{}
+      \resumeItemListStart
+        \resumeItem{Implemented application reconciliation across Algolia and multiple internal APIs}
+        \resumeItem{Built fault-tolerant architecture with graceful degradation when APIs fail}
+        \resumeItem{Developed duplicate detection and missing application recovery mechanisms}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Additional Achievements}}{}
+      \resumeItemListStart
+        \resumeItem{Built bulk Slack DM system sending 10,000+ messages with rate limit handling using Bull queue}
+        \resumeItem{Decomposed monolith into microservices, slashing memory/CPU usage during high job loads}
+        \resumeItem{Developed Stripe payment gateway integration for events platform}
+        \resumeItem{Migrated services from Digital Ocean to AWS, improving performance and reliability}
+        \resumeItem{Created dev environment CLI reducing setup time from 2+ days to minutes}
+        \resumeItem{Led JavaScript to JSDoc migration resulting in fewer runtime errors with zero delivery slowdown}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Levenshtein Automata} $|$ \emph{Kotlin} $|$ \href{https://github.com/nivekithan/levenshtein-automata}{GitHub}}{2025}
+      \resumeItemListStart
+        \resumeItem{Fast fuzzy string search using finite automata achieving 10,727 queries/sec on 370K-word dictionary}
+        \resumeItem{38\% faster than runtime construction at distance 3 using precomputed DFA + Trie-based dictionary}
+        \resumeItem{Implemented 7 progressive optimization versions (v1-v7) from Schulz \& Mihov paper}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Go Raft} $|$ \emph{Go} $|$ \href{https://github.com/nivekithan/go-raft}{GitHub}}{2024}
+      \resumeItemListStart
+        \resumeItem{Raft consensus algorithm implementation with formal verification using P-lang model checking}
+        \resumeItem{Minimal mutex usage for performance optimization while maintaining correctness guarantees}
+        \resumeItem{Verified safety and liveness properties before writing implementation code}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Protohackers Network Programming} $|$ \emph{Go} $|$ \href{https://github.com/nivekithan/go-network}{GitHub}}{2025}
+      \resumeItemListStart
+        \resumeItem{Solved 7 network programming challenges including custom LRCP protocol (UDP + acks + retransmission)}
+        \resumeItem{Implemented binary TCP protocol for speed cameras, TCP proxy with address rewriting}
+        \resumeItem{Built multi-user chat server and asset tracking system with binary protocol + SQLite}
+      \resumeItemListEnd
+
+    \begin{samepage}
+    \resumeProjectHeading
+      {\textbf{Tango Programming Language} $|$ \emph{Go} $|$ \href{https://github.com/nivekithan/tango}{GitHub}}{2025}
+      \resumeItemListStart
+        \resumeItem{Full compiler pipeline: Lexer → Parser → AST → Compiler → VM with bytecode execution}
+        \resumeItem{Supports variables, arithmetic, boolean operations, and interactive REPL}
+      \resumeItemListEnd
+    \end{samepage}
+
+    \resumeProjectHeading
+      {\textbf{Blender Render Farm} $|$ \emph{Go, Docker, AWS} $|$ \href{https://github.com/nivekithan/blender-render-farm}{GitHub}}{2024}
+      \resumeItemListStart
+        \resumeItem{Serverless distributed rendering distributing animation frames across AWS Fargate containers}
+        \resumeItem{S3 upload events trigger Lambda orchestration for parallel rendering with automatic frame consolidation}
+        \resumeItem{Infrastructure as Code using Pulumi (AWS Batch + Lambda + S3)}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{TypeScript Compiler} $|$ \emph{TypeScript, LLVM} $|$ \href{https://github.com/nivekithan/compiler}{GitHub}}{2022}
+      \resumeItemListStart
+        \resumeItem{TypeScript to native code compiler using LLVM backend with full test coverage}
+        \resumeItem{Supports variables, control flow, functions, and operators with native code output}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------LIVE PROJECTS-----------
+\section{Live Production Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Maailit} $|$ \emph{Next.js 14, Cloudflare Workers, Durable Objects, D1} $|$ \href{https://maailit.com}{maailit.com} $|$ \href{https://github.com/nivekithan/maailit}{GitHub}}{2024}
+      \resumeItemListStart
+        \resumeItem{Temporary email service for developers to test OTPs and password resets without inbox clutter}
+        \resumeItem{Real-time WebSocket updates, AI-powered code extraction (GPT-4o-mini), 15-min auto-cleanup, zero registration}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Fireside Events} $|$ \emph{React Router v7, WebRTC, XState v5} $|$ \href{https://calls.nivekithan.com/}{calls.nivekithan.com} $|$ \href{https://github.com/nivekithan/fireside-events}{GitHub}}{2024}
+      \resumeItemListStart
+        \resumeItem{Real-time video broadcasting with XState state machines for complex UI flows}
+        \resumeItem{Multi-participant calls, screen sharing, WebSocket signaling using Cloudflare Durable Objects}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Chat with JSON} $|$ \emph{Remix, Vercel AI SDK} $|$ \href{https://chat-with-json.nivekithan.com}{chat-with-json.nivekithan.com} $|$ \href{https://github.com/nivekithan/chat-with-json}{GitHub}}{2024}
+      \resumeItemListStart
+        \resumeItem{Query JSON files with natural language using GPT-4, with all data processing client-side in browser}
+        \resumeItem{Auto schema generation and streaming responses for optimal user experience}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{pg-cluster (WIP)} $|$ \emph{TypeScript, Effect-TS, Kubernetes, PostgreSQL 17} $|$ \href{https://github.com/nivekithan/pg-cluster}{GitHub}}{2025}
+      \resumeItemListStart
+        \resumeItem{Kubernetes operator for PostgreSQL clusters with backups, PITR, and on-demand DB provisioning for PR previews}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, Go, Kotlin, JavaScript} \\
+     \textbf{Backend}{: Node.js, Cloudflare Workers, Hono, Express.js} \\
+     \textbf{Cloud \& Infrastructure}{: AWS (Batch, Lambda, S3), Cloudflare, Pulumi, Kubernetes} \\
+     \textbf{Databases}{: PostgreSQL, SQLite, D1} \\
+     \textbf{Frontend}{: React, Next.js, Remix, React Router, Vite} \\
+     \textbf{Other}{: WebRTC, WebSockets, Distributed Systems, Compiler Design, Network Programming}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Petroleum and Energy Studies (UPES)}{Dehradun, India}
+      {B.Tech}{}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
