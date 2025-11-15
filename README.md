@@ -27,15 +27,15 @@ Frontend             React · Next.js · Remix · React Router · Vite
 
 Delivering production systems for clients across scheduling, fintech, and funding platforms. Here's what I've built:
 
-### 📅 Scheduling System
+### Scheduling System
 
 Built a robust appointment booking platform connecting users with industry experts.
 
 **Highlights:**
-- 🔒 **Zero double bookings** through proper concurrency control
-- 💳 Integrated Razorpay with duplicate payment prevention
-- 📆 Google Calendar sync to avoid conflicts
-- ⏰ Custom mentor availability management
+- **Zero double bookings** through proper concurrency control
+- Integrated Razorpay with duplicate payment prevention
+- Google Calendar sync to avoid conflicts
+- Custom mentor availability management
 
 `TypeScript` `React Router v7` `Cloudflare Workers` `PostgreSQL`
 
@@ -44,10 +44,10 @@ Built a robust appointment booking platform connecting users with industry exper
 Enterprise credits management system for airline employee uniform purchases.
 
 **Highlights:**
-- 💰 **Balances never go negative** - handled every concurrency edge case
-- 🔄 Accurate accounting across refunds, cancellations, and returns
-- 🧾 Custom tax software integration for precise sales tax
-- 📊 Analytics dashboards for vendors and airline management
+- **Balances never go negative** - handled every concurrency edge case
+- Accurate accounting across refunds, cancellations, and returns
+- Custom tax software integration for precise sales tax
+- Analytics dashboards for vendors and airline management
 
 `TypeScript` `Next.js` `Cloudflare Workers` `PostgreSQL`
 
@@ -56,20 +56,20 @@ Enterprise credits management system for airline employee uniform purchases.
 Collaboration platform connecting founders with investors.
 
 **Highlights:**
-- 🔄 Application reconciliation across Algolia + multiple internal APIs
-- 🛡️ **Fault-tolerant architecture** - graceful degradation when APIs fail
-- 🔍 Duplicate detection and missing application recovery
+- Application reconciliation across Algolia + multiple internal APIs
+- **Fault-tolerant architecture** - graceful degradation when APIs fail
+- Duplicate detection and missing application recovery
 
 `TypeScript` `React Router v7` `Cloudflare Workers` `PostgreSQL`
 
 ### 🎯 Other Wins
 
-- 📨 Built bulk Slack DM system sending **10,000+ messages** with rate limit handling (Bull queue)
-- 🏗️ Decomposed monolith → microservices, **slashing memory/CPU usage** during high job loads
-- 💰 Developed Stripe payment gateway for events platform
-- ☁️ Migrated services Digital Ocean → AWS, improving performance
-- ⚡ Created dev environment CLI: **setup time from 2+ days → minutes**
-- 📝 Led JS → JSDoc migration: fewer runtime errors, zero delivery slowdown
+- Built bulk Slack DM system sending **10,000+ messages** with rate limit handling (Bull queue)
+- Decomposed monolith → microservices, **slashing memory/CPU usage** during high job loads
+- Developed Stripe payment gateway for events platform
+- Migrated services Digital Ocean → AWS, improving performance
+- Created dev environment CLI: **setup time from 2+ days → minutes**
+- Led JS → JSDoc migration: fewer runtime errors, zero delivery slowdown
 
 ---
 
@@ -77,7 +77,7 @@ Collaboration platform connecting founders with investors.
 
 *I build things to understand how they work - from consensus algorithms to compilers.*
 
-### 🔍 [Levenshtein Automata](https://github.com/nivekithan/levenshtein-automata)
+### [Levenshtein Automata](https://github.com/nivekithan/levenshtein-automata)
 
 Fast fuzzy string search using finite automata - **10,727 queries/sec** on 370K-word dictionary.
 
@@ -89,7 +89,7 @@ Language:    Kotlin
 
 7 implementation versions (v1-v7) showing progressive optimizations from the Schulz & Mihov paper.
 
-### 🗳️ [Go Raft](https://github.com/nivekithan/go-raft)
+### [Go Raft](https://github.com/nivekithan/go-raft)
 
 Raft consensus algorithm implementation with **formal verification** before a single line of code.
 
@@ -101,21 +101,21 @@ Language:     Go
 
 **Links:** [P-lang Models](https://github.com/nivekithan/p-models) • [Original Paper](https://raft.github.io/raft.pdf)
 
-### 🌐 [Protohackers Solutions](https://github.com/nivekithan/go-network)
+### [Protohackers Solutions](https://github.com/nivekithan/go-network)
 
 Network programming challenges: TCP/UDP servers, custom protocols, and everything low-level.
 
 **7 Challenges Solved:**
-- 🔄 Custom LRCP protocol (UDP + acks + retransmission)
-- 🚗 Binary TCP protocol for speed cameras
-- 🔀 TCP proxy with address rewriting
-- 💬 Multi-user chat server
-- 📊 Asset tracking with binary protocol + SQLite
+- Custom LRCP protocol (UDP + acks + retransmission)
+- Binary TCP protocol for speed cameras
+- TCP proxy with address rewriting
+- Multi-user chat server
+- Asset tracking with binary protocol + SQLite
 - And more...
 
 `Go` `TCP/UDP` `Custom Protocols`
 
-### 🎯 [Tango Programming Language](https://github.com/nivekithan/tango)
+### [Tango Programming Language](https://github.com/nivekithan/tango)
 
 Custom language with full compiler pipeline: **Lexer → Parser → AST → Compiler → VM**.
 
@@ -125,7 +125,7 @@ Output:   Bytecode execution
 Language: Go
 ```
 
-### 🎬 [Blender Render Farm](https://github.com/nivekithan/blender-render-farm)
+### [Blender Render Farm](https://github.com/nivekithan/blender-render-farm)
 
 Serverless distributed rendering: distribute animation frames across AWS Fargate containers.
 
@@ -137,7 +137,7 @@ IaC:          Pulumi
 
 Parallel rendering with automatic frame consolidation. `Go` `Docker` `AWS`
 
-### ⚙️ [TypeScript Compiler](https://github.com/nivekithan/compiler)
+### [TypeScript Compiler](https://github.com/nivekithan/compiler)
 
 TypeScript → Native code using LLVM. Educational compiler with full test coverage.
 
@@ -151,7 +151,7 @@ Output:   Native code
 
 ## 🚀 Live Projects
 
-### 📧 [Maailit](https://maailit.com) • [GitHub](https://github.com/nivekithan/maailit)
+### [Maailit](https://maailit.com) • [GitHub](https://github.com/nivekithan/maailit)
 
 Temporary email for developers - test OTPs, password resets, without inbox clutter.
 
@@ -159,7 +159,7 @@ Temporary email for developers - test OTPs, password resets, without inbox clutt
 
 `Next.js 14` `Cloudflare Workers` `Durable Objects` `D1`
 
-### 📹 [Fireside Events](https://calls.nivekithan.com/) • [GitHub](https://github.com/nivekithan/fireside-events)
+### [Fireside Events](https://calls.nivekithan.com/) • [GitHub](https://github.com/nivekithan/fireside-events)
 
 Real-time video broadcasting with **XState state machines** for complex UI flows.
 
@@ -167,7 +167,7 @@ Real-time video broadcasting with **XState state machines** for complex UI flows
 
 `React Router v7` `WebRTC` `XState v5` `Cloudflare Calls API`
 
-### 💬 [Chat with JSON](https://chat-with-json.nivekithan.com) • [GitHub](https://github.com/nivekithan/chat-with-json)
+### [Chat with JSON](https://chat-with-json.nivekithan.com) • [GitHub](https://github.com/nivekithan/chat-with-json)
 
 Query JSON files with natural language. **Your data never leaves your browser.**
 
@@ -175,7 +175,7 @@ Query JSON files with natural language. **Your data never leaves your browser.**
 
 `Remix` `Vercel AI SDK` `Cloudflare Pages`
 
-### 🔧 [pg-cluster](https://github.com/nivekithan/pg-cluster) *[WIP]*
+### [pg-cluster](https://github.com/nivekithan/pg-cluster) *[WIP]*
 
 Kubernetes operator for PostgreSQL clusters - backups, PITR, on-demand DB provisioning for PR previews.
 
@@ -195,10 +195,10 @@ Completed 6 challenges: Echo • Unique ID Generation • Single/Multi-Node Broa
 
 ## 🌱 Early Projects
 
-**[Path Finder](https://path-finder-brown.vercel.app/)** • [GitHub](https://github.com/nivekithan/path-finder)  
+**[Path Finder](https://path-finder-brown.vercel.app/)** • [GitHub](https://github.com/nivekithan/path-finder)
 Pathfinding algorithm visualizer - one of my first projects.
 
-**[slate-devtools](https://www.npmjs.com/package/slate-devtools)** • [GitHub](https://github.com/nivekithan/slate-devtools)  
+**[slate-devtools](https://www.npmjs.com/package/slate-devtools)** • [GitHub](https://github.com/nivekithan/slate-devtools)
 Debugging tools for Slate.js rich text editor. Built while cloning Notion as a beginner.
 
 ---
