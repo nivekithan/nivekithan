@@ -73,7 +73,7 @@ Collaboration platform connecting founders with investors.
 
 ---
 
-## 🔨 Featured Projects
+## 🔨 Featured Projects (All Pre AI)
 
 *I build things to understand how they work - from consensus algorithms to compilers.*
 
