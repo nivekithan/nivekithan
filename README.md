@@ -1,6 +1,6 @@
 # Hi, I'm Nivekithan 👋
 
-> Backend Engineer at [EPYC](https://www.linkedin.com/company/epyc/) | Building distributed systems, compilers, and everything in between
+> Backend Engineer at [SARAL](https://www.linkedin.com/company/81731249/) | Building distributed systems, compilers, and everything in between
 
 I'm passionate about **backend engineering**, **distributed systems**, and **systems programming**. When I'm not shipping production code, I'm probably implementing a consensus algorithm or building a programming language for fun.
 
@@ -23,7 +23,7 @@ Frontend             React · Next.js · Remix · React Router · Vite
 
 ## 💼 Work Experience
 
-**Backend Engineer** @ [EPYC](https://www.linkedin.com/company/epyc/) | *Current*
+**Backend Engineer** @ [EPYC](https://www.linkedin.com/company/epyc/) | *Aug 2022 - Feb 2026*
 
 Delivering production systems for clients across scheduling, fintech, and funding platforms. Here's what I've built:
 
